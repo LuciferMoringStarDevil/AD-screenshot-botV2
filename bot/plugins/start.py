@@ -8,8 +8,8 @@ from ..screenshotbot import ScreenShotBot
 @ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
-    username = 'Mrk_YT'
-    mention = '[Mo Tech YT](https://t.me/Mo_Tech_YT)'
+    username = 'AD_BOTZ'
+    mention = '[BOTZ](https://t.me/AD_BOTZ)'
     try:
         owner = await c.get_users(owner_id)
         username = owner.username if owner.username else 'Ns_AnoNymous'
@@ -18,10 +18,10 @@ async def start(c, m, cb=False):
         print(e)
 
     BUTTONS = [[
-        InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
-        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/Mo_Tech_YT")
+        InlineKeyboardButton("👨🏻‍🦱 My Father 👨🏻‍🦱", url=f"https://t.me/{username}"),
+        InlineKeyboardButton("🔰 Updates Channel 🔰", url="https://t.me/AD_BOTZ")
         ],[
-        InlineKeyboardButton("🖥️ How To Own 🖥️", url="https://youtu.be/lGlczIZ4HTI")
+        InlineKeyboardButton("🎬 For Movie 🎬", url="https://t.me/ADMOVEIAD")
         ],[
         InlineKeyboardButton("Help ⁉️", callback_data="help"),
         InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
@@ -29,7 +29,7 @@ async def start(c, m, cb=False):
         InlineKeyboardButton("Close 📛", callback_data="close")
     ]]
 
-    TEXT = f"👋 Hi {m.from_user.mention},\n\nI'm Screenshot Generator Bot. I can provide screenshots, sample video from "
+    TEXT = f"👋 Hi {m.from_user.mention},\n\nI'm Screenshot Generator Bot😁. I can provide screenshots, sample video from "
     TEXT += "your video files and also can trim. For more details check help.\n\n"
     TEXT += f"**Maintained By:** {mention}"
 
